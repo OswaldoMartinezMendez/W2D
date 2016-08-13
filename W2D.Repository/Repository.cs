@@ -69,7 +69,7 @@ namespace W2D.Repository
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            return;
         }
     }
 }
