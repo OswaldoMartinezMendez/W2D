@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace W2D.AccesData
+namespace W2D.Domain.Entities
 {
     using System;
     using System.Collections.Generic;
