@@ -6,6 +6,9 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using AutoMapper;
+using W2D.Domain.Entities;
+using W2D.MVC.Models;
 
 namespace W2D.MVC
 {
@@ -18,7 +21,7 @@ namespace W2D.MVC
         {
             AreaRegistration.RegisterAllAreas();
             Bootstrapper.Initialise();
-
+            Mapper.CreateMap<Person, PersonModel>();
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

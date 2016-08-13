@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity.Core.Metadata.Edm;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
@@ -33,7 +34,13 @@ namespace W2D.Service.Concrete
 
         public IEnumerable<Person> GetAll()
         {
-            return _repository.GetAll().ToList();
+            var list = _repository.GetAll().ToList();
+            if (list.Any())
+                return list;
+            else
+            {
+                return new List<Person>();
+            }
         }
 
         public Person GetById(int id)
