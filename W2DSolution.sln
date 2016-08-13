@@ -19,6 +19,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{8FAC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "W2D.Service", "W2D.Service\W2D.Service.csproj", "{BE69778E-3608-4ED5-B80F-F5A041639431}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{61F382F1-1949-4023-A559-44DE0C80073D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "W2D.MVC", "W2D.MVC\W2D.MVC.csproj", "{0FAC5599-D896-49F2-85B6-2166A6F3C180}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +45,10 @@ Global
 		{BE69778E-3608-4ED5-B80F-F5A041639431}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE69778E-3608-4ED5-B80F-F5A041639431}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE69778E-3608-4ED5-B80F-F5A041639431}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FAC5599-D896-49F2-85B6-2166A6F3C180}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FAC5599-D896-49F2-85B6-2166A6F3C180}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FAC5599-D896-49F2-85B6-2166A6F3C180}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FAC5599-D896-49F2-85B6-2166A6F3C180}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,5 +58,9 @@ Global
 		{633B4C45-65B5-4994-93E3-DFC968E3934F} = {AD018D72-0927-41C4-9EBB-C054A16C6500}
 		{7005AC69-1FEA-4C43-A9F2-9B9512A99439} = {BB39396A-03E5-46EB-BFDD-31FAA65FF461}
 		{BE69778E-3608-4ED5-B80F-F5A041639431} = {8FACD072-CE5F-4BAB-B59E-B040C1FF2754}
+		{0FAC5599-D896-49F2-85B6-2166A6F3C180} = {61F382F1-1949-4023-A559-44DE0C80073D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35
 	EndGlobalSection
 EndGlobal
