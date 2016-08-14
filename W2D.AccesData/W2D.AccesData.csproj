@@ -59,6 +59,7 @@
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>W2D.Domain.Entities</CustomToolNamespace>
     </EntityDeploy>
   </ItemGroup>
   <ItemGroup>
@@ -70,6 +71,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\W2D.Domain.Entities\W2D.Domain.Entities.csproj">
+      <Project>{633b4c45-65b5-4994-93e3-dfc968e3934f}</Project>
+      <Name>W2D.Domain.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

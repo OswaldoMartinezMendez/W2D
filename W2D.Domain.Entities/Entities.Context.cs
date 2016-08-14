@@ -13,7 +13,7 @@ namespace W2D.Domain.Entities
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class W2DEntities : DbContext
+    public partial class W2DEntities : DbContext, IDisposable
     {
         public W2DEntities()
             : base("name=W2DEntities")

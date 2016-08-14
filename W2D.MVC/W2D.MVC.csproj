@@ -339,6 +339,10 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\W2D.AccesData\W2D.AccesData.csproj">
+      <Project>{3358af01-0e1f-48b5-ae0d-079450b53385}</Project>
+      <Name>W2D.AccesData</Name>
+    </ProjectReference>
     <ProjectReference Include="..\W2D.Domain.Entities\W2D.Domain.Entities.csproj">
       <Project>{633b4c45-65b5-4994-93e3-dfc968e3934f}</Project>
       <Name>W2D.Domain.Entities</Name>

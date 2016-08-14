@@ -12,15 +12,26 @@
 </p>
 <table>
     <tr>
-        <th></th>
+        <th><h3>Document Number</h3></th>
+        <th>
+            <h3>Name</h3></th>
+        <th>
+            <h3>Last Name</h3></th>
+        <th>
+            <h3>Phone</h3></th>
+        <th><h3>Settings</h3></th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
+        <td>@item.DocumentNumber</td>
+        <td>@item.Name</td>
+        <td>@item.LastName</td>
+        <td>@item.Phone</td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            @Html.ActionLink("Edit", "Edit", new {/* id=item.PrimaryKey */}) |
+            @Html.ActionLink("Details", "Details", new {/* id=item.PrimaryKey */}) |
+            @Html.ActionLink("Delete", "Delete", new {/* id=item.PrimaryKey */})
         </td>
     </tr>
 }
