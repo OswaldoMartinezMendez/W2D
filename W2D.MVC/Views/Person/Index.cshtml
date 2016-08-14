@@ -5,14 +5,14 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>List Persons</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create New Person", "Create")
 </p>
 <table>
     <tr>
-        <th><h3>Document Number</h3></th>
+        <th><h3>Document</h3></th>
         <th>
             <h3>Name</h3></th>
         <th>
@@ -29,9 +29,9 @@
         <td>@item.LastName</td>
         <td>@item.Phone</td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new {/* id=item.PrimaryKey */}) |
-            @Html.ActionLink("Details", "Details", new {/* id=item.PrimaryKey */}) |
-            @Html.ActionLink("Delete", "Delete", new {/* id=item.PrimaryKey */})
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id}) |
+           
+            @Html.ActionLink("Delete", "Delete", new { id = item.Id })
         </td>
     </tr>
 }

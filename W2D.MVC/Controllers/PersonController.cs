@@ -53,8 +53,14 @@ namespace W2D.MVC.Controllers
         {
             try
             {
-                // TODO: Add insert logic here
-
+                var person = new Person()
+                {
+                    DocumentNumber = collection["DocumentNumber"],
+                    Name = collection["Name"],
+                    LastName = collection["LastName"],
+                    Phone = collection["Phone"],
+                };
+                _service.Add(person);
                 return RedirectToAction("Index");
             }
             catch
@@ -68,7 +74,9 @@ namespace W2D.MVC.Controllers
 
         public ActionResult Edit(int id)
         {
-            return View();
+            var person = _service.GetById(id);
+            var personModel = Mapper.Map<Person, PersonModel>(person);
+            return View(personModel);
         }
 
         //
@@ -79,7 +87,16 @@ namespace W2D.MVC.Controllers
         {
             try
             {
-                // TODO: Add update logic here
+                var updatePerson = new Person()
+                {
+                    Id = id,
+                    DocumentNumber = collection["DocumentNumber"],
+                    Name = collection["Name"],
+                    LastName = collection["LastName"],
+                    Phone = collection["Phone"]
+                };
+
+                _service.Update(updatePerson);
 
                 return RedirectToAction("Index");
             }
@@ -94,7 +111,9 @@ namespace W2D.MVC.Controllers
 
         public ActionResult Delete(int id)
         {
-            return View();
+            var person = _service.GetById(id);
+            var personModel = Mapper.Map<Person, PersonModel>(person);
+            return View(personModel);
         }
 
         //
@@ -105,7 +124,16 @@ namespace W2D.MVC.Controllers
         {
             try
             {
-                // TODO: Add delete logic here
+                var deletePerson = new Person()
+                {
+                    Id = id,
+                    DocumentNumber = collection["DocumentNumber"],
+                    Name = collection["Name"],
+                    LastName = collection["LastName"],
+                    Phone = collection["Phone"]
+                };
+
+                _service.Delete(deletePerson);
 
                 return RedirectToAction("Index");
             }
